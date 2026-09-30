@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState } from "react";
 import {
   ThemeProvider,
@@ -9,6 +10,7 @@ import AuthPage from "./components/AuthPage";
 import UserDashboard from "./components/UserDashboard";
 import StaffDashboard from "./components/StaffDashboard";
 import AdminDashboard from "./components/AdminDashboard";
+axios.defaults.baseURL = process.env.REACT_APP_API_URL || "";
 
 /*
 =========================================================
